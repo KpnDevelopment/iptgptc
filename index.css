@@ -7,103 +7,173 @@
 
 } */
 body {
-  -webkit-font-smoothing: antialiased;
-  
+  -webkit-font-smoothing: smooth;
 }
-
-
 
 /* nav */
 nav .navbar {
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: .1rem;
-  background:linear-gradient(-45deg,#3b87bd,#2d71a2),center center no-repeat;
-  
+  letter-spacing: 0.1rem;
+  background: linear-gradient(-45deg, #3b87bd, #2d71a2), center center no-repeat;
 }
 .navbar-toggler-icon {
   background: black;
 }
 .navbar-brand {
-  height: 2rem;
-  font-family: 'Merienda One', cursive;
-  color: #fff;
+ 
+  font-family: "Merienda One", cursive;
+  color: #fff;;
 }
 .navbar-brand img {
-  background: #fff;
-  color: white;
+  color: #fff;
 }
 
 #navbarResposive .navbar-nav .nav-item .nav-link {
   color: #fff;
   font-weight: 900;
   text-transform: uppercase;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 .navbar-nav li a:active {
-  color:white;
+  color: white;
+}
+#navbarResposive .navbar-nav .nav-item .nav-link:active {
+color: #fff;
+}
+#navbarResposive .navbar-nav .nav-item .nav-link:hover {
+  opacity: 1;
 }
 .navbar-nav li a:hover {
-  color:white;
+  color: white;
+  opacity: 1;
 }
 /* nav end */
-
+/* home section */
+#home h1 {
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+}
+/* end home section */
 
 /* # About */
 .about {
-    padding: 120px 0;
-    height: 80vh;
-  }
-  
-  .about .content h3 {
-    font-weight: 600;
-    font-size: 32px;
-    color: #2c4964;
-  }
-  
-  .about .content ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .about .content ul li {
-    padding-bottom: 10px;
-  }
-  
-  .about .content ul i {
-    font-size: 20px;
-    padding-right: 4px;
-    /* color: #5846f9; */
-  }
-  
-  .about .content p:last-child {
-    margin-bottom: 0;
-  }
-  
-  .about .content .btn {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 10px 50px 10px 28px;
-    border-radius: 5px;
-    transition: 0.5s;
-    color: #fff;
-    background:linear-gradient(-45deg,#3b87bd,#a6bbca),center center no-repeat;
-    position: relative;
-  }
-  
-  /* .about .content .read-more:hover { */
-    /* background: linear-gradient(180deg, #3b87bd , #2d71a2); */
-  /* } */
-  
-  .about .content .read-more i {
-    font-size: 22px;
-    position: absolute;
-    right: 20px;
-    top: 12px;
-    text-decoration: none;  }
-  
-  /*--------------------------------------------------------------
+  padding: 120px 0;
+  height: 80vh;
+}
 
+.about .content h3 {
+  font-weight: 600;
+  font-size: 32px;
+  color: #2c4964;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  padding-bottom: 10px;
+}
+
+.about .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  /* color: #5846f9; */
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+.about .content a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 50px 10px 28px;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: #fff;
+  background: linear-gradient(-45deg, #3b87bd, #2d71a2), center center no-repeat;
+  position: relative;
+}
+
+/* .about .content .read-more:hover { */
+/* background: linear-gradient(180deg, #3b87bd , #2d71a2); */
+/* } */
+
+.about .content .read-more i {
+  font-size: 22px;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+
+
+  /*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .info {
+  width: 100%;
+}
+
+#contact .info i {
+  font-size: 20px;
+  float: left;
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(-45deg, #3b87bd, #2d71a2), center center no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #bab3a6;
+}
+
+.contact .info .open-hours,
+.contact .info .email,
+.contact .info .phone {
+  margin-top: 40px;
+}
+
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
